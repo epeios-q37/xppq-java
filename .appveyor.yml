@@ -10,7 +10,7 @@ os :
 # - Visual Studio 2017
 
 test_script:
-- java XPPQDemo
+- java -Djava.library.path=Release XPPQDemo
 
 matrix:
   allow_failures:
