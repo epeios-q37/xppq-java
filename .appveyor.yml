@@ -1,16 +1,16 @@
 platform:
-- Win32
+# - Win32
 - x64
 
 configuration: Release
 
 os :
 - Visual Studio 2013
-# - Visual Studio 2015
-# - Visual Studio 2017
+- Visual Studio 2015
+- Visual Studio 2017
 
 test_script:
-- java -Djava.library.path=Release XPPQDemo
+- java -Djava.library.path=x64/Release XPPQDemo
 
 matrix:
   allow_failures:
