@@ -10,4 +10,6 @@ matrix:
 
 language: cpp
 
-script: make
+script:
+- make
+- java -Djava.library.path=x64/Release XPPQDemo
