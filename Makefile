@@ -347,7 +347,7 @@ endif
 ##########################
 		
 all: $(binary)
-	javac src/*.java
+	javac src/*.java -d .
 	rm -rf *.o
 ifeq ("$(target)","$(Android)")
 	rm -rf *.d
