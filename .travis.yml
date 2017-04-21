@@ -11,5 +11,5 @@ matrix:
 language: cpp
 
 script:
-- make -j 4
+- java -Djava.library.path=. XPPQDemo
 - java XPPQDemo
