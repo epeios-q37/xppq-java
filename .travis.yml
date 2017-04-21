@@ -1,0 +1,13 @@
+matrix:
+  include: 
+    - os: linux
+      dist: trusty
+      compiler: g++
+    - os: linux
+      compiler: clang++
+    - os: osx
+      compiler: clang++  
+
+language: cpp
+
+script: make
