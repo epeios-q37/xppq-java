@@ -231,6 +231,7 @@ endif
 #########################
 
 ifeq ("$(os)", "$(MinGW)")
+ 	src += :"$(jdk)include/win32"
 
 	co += -DMSYS -std=gnu++11 -DUNICODE
 	lo += -municode
@@ -263,6 +264,7 @@ endif
 #############################
 
 ifeq ("$(os)","$(GNULinux)")
+ 	src += :"$(jdk)include/linux"
 
 	co += -std=gnu++11 -DUNICODE -D_FILE_OFFSET_BITS=64
 	
@@ -294,6 +296,7 @@ endif
 #########################
 
 ifeq ("$(os)","$(Linux)")
+ 	src += :"$(jdk)include/linux"
 
 	co += -std=gnu++11 -DUNICODE -D_FILE_OFFSET_BITS=64
 	
@@ -323,6 +326,7 @@ endif
 ##########################
 
 ifeq ("$(os)","$(MacOS)")
+ 	src += :"$(jdk)include/darwin"
 
 	co += -std=gnu++11 -DUNICODE -D_FILE_OFFSET_BITS=64
 	
@@ -366,7 +370,7 @@ else
 endif
 
     
-src += :"$(jdk)include":"$(jdk)include/linux"
+src += :"$(jdk)include"
       
 ox = o
 ds = :
