@@ -8,7 +8,9 @@ matrix:
     - os: osx
       compiler: clang++  
 
-language: cpp
+language:
+- cpp
+- java
 
 script:
 - make -j 4
