@@ -326,7 +326,7 @@ endif
 ##########################
 
 ifeq ("$(os)","$(MacOS)")
- 	jdk=$(shell /usr/libexec/java_home)
+ 	jdk=$(shell /usr/libexec/java_home)/
 	src += :"$(jdk)Headers":"$(jdk)Headers/darwin"
 
 	co += -std=gnu++11 -DUNICODE -D_FILE_OFFSET_BITS=64

@@ -4,7 +4,8 @@ matrix:
       dist: trusty
       compiler: g++
     - os: linux
-      compiler: clang++
+#      compiler: clang++
+      env: CXX=clang++
     - os: osx
       compiler: clang++  
 
