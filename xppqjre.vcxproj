@@ -21,7 +21,7 @@
   <Import Project="Windows.targets"/>
   <Import Project="Details.props"/>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>19d4067e-785b-45bf-a058-159356f25367</ProjectGuid>
+    <ProjectGuid>d9994499-0f8a-4e0e-ab77-d3b4d845a67d</ProjectGuid>
     <RootNamespace>xppqjre</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
