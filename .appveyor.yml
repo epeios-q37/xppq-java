@@ -12,7 +12,7 @@ os :
 test_script:
 - java -Djava.library.path=x64/Release XPPQDemo
 
-matrix:
-  allow_failures:
-  - os: Visual Studio 2017
+# matrix:
+  # allow_failures:
+  # - os: Visual Studio 2017
 
